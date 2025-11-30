@@ -27,7 +27,11 @@ const I18N = {
     'projects.title': 'Projeler',
     'gallery.title': 'Fotoğraf Galerisi',
     'contact.title': 'İletişim',
-    'contact.desc': 'İş birlikleri ve projeler için:'
+    'contact.desc': 'İş birlikleri ve projeler için:',
+  "ai": {
+    "title": "Yapay Zeka İkizimle Tanışın",
+    "desc": "Benimle şu an konuşamıyor musunuz? Sorun değil. Dijital ikizim 7/24 burada. Projelerim, tecrübelerim ve vizyonum hakkında her şeyi ona sorabilirsiniz."
+  }
   },
   en: {
     'nav.about': 'About',
@@ -50,7 +54,11 @@ const I18N = {
     'projects.title': 'Projects',
     'gallery.title': 'Photo Gallery',
     'contact.title': 'Contact',
-    'contact.desc': 'For collaborations and projects:'
+    'contact.desc': 'For collaborations and projects:',
+  "ai": {
+    "title": "Meet My AI Twin",
+    "desc": "Can't reach me right now? No problem. My digital twin is here 24/7. Ask anything about my projects, experience, or vision."
+  }
   }
 };
 
