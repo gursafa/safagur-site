@@ -1,6 +1,5 @@
 // ---- Config ----
-const HERO_PHOTO = "https://media.licdn.com/dms/image/v2/C4D03AQFVQoeC8geR7A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1601264736507?e=1762992000&v=beta&t=8D0w55K2Ul-PQFdW9Dje3p0yNG2TaiOHw-MeYzQCoKA";
-
+const HERO_PHOTO = "./avatar.jpg";
 // Gallery via manifest.json (fallback list if not found)
 const GALLERY_FALLBACK = ["assets/gallery/bali.jpeg", "assets/gallery/canada.jpeg", "assets/gallery/istanbul.jpeg", "assets/gallery/morocco.jpeg", "assets/gallery/newyork.jpeg", "assets/gallery/paris.jpeg", "assets/gallery/tbilisi.jpeg", "assets/gallery/uk.jpeg"];
 
