@@ -10,6 +10,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+  /* --- MOBİL UYUMLULUK AYARLARI --- */
+  @media (max-width: 900px) {
+    /* Hero bölümünü alt alta sırala */
+    #home {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+    
+    /* Kutuların genişliğini %100 yap (Kenar boşluklarıyla) */
+    #home > div {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: auto !important;
+    }
+
+    /* Chatbot yüksekliğini mobilde biraz kısalt (Sayfayı çok uzatmasın) */
+    #chatbot-container {
+      height: 500px !important; 
+    }
+  }
+</style>
 </head>
 <body>
   <div class="bg-orbs" aria-hidden="true">
