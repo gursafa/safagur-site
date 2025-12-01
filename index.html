@@ -10,28 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-  /* --- MOBİL UYUMLULUK AYARLARI --- */
-  @media (max-width: 900px) {
-    /* Hero bölümünü alt alta sırala */
-    #home {
-      flex-direction: column !important;
-      align-items: center !important;
-    }
-    
-    /* Kutuların genişliğini %100 yap (Kenar boşluklarıyla) */
-    #home > div {
-      width: 100% !important;
-      max-width: 100% !important;
-      min-width: auto !important;
-    }
-
-    /* Chatbot yüksekliğini mobilde biraz kısalt (Sayfayı çok uzatmasın) */
-    #chatbot-container {
-      height: 500px !important; 
-    }
-  }
-</style>
 </head>
 <body>
   <div class="bg-orbs" aria-hidden="true">
@@ -62,18 +40,20 @@
       <div class="hero-card">
         <div class="avatar-wrap">
           <div class="ring" aria-hidden="true"></div>
-          <img class="avatar" id="hero-avatar" alt="Safa Gür" />
+          <img class="avatar" id="hero-avatar" src="assets/img/avatar.jpg" alt="Safa Gür" />
         </div>
         <h1>Safa Gür</h1>
         <div class="subtitle" data-i18n="hero.subtitle">Industrial Engineer • Operations & Process Improvement • AI</div>
         <div class="cta">
           <a class="btn primary" href="#projects" data-i18n="hero.ctaProjects">Projects</a>
           <a class="btn ghost" href="#gallery" data-i18n="hero.ctaGallery">Life Beyond Work</a>
+          
           <a class="btn" href="https://chat.safagur.com" target="_blank" style="background-color: #0e2a5e; color: white; border: none; display: inline-flex; align-items: center; gap: 8px;">
-    <span>Chat with AI Me</span> 🧬
-  </a>
+            <span>Chat with AI Me</span> 🧬
+          </a>
         </div>
       </div>
+      
       <div class="card">
         <h2 class="section-title" data-i18n="highlights.title">Highlights</h2>
         <div class="badges" style="margin-top:6px">
@@ -83,9 +63,9 @@
           <span class="chip">AI‑powered Tools</span>
         </div>
         <p style="margin-top:12px" data-i18n="highlights.desc">I build data‑driven, scalable and resilient business systems by combining industrial engineering with modern analytics & AI.</p>
-       <p style="margin-top:16px">
-    <a href="assets/cv/Safa_Gur_CV.pdf" class="btn primary" download>⬇️ Download CV (PDF)</a>
-  </p>
+        <p style="margin-top:16px">
+          <a href="assets/cv/Safa_Gur_CV.pdf" class="btn primary" download>⬇️ Download CV (PDF)</a>
+        </p>
       </div>
     </section>
 
@@ -129,7 +109,6 @@
       <div class="card">
         <p data-i18n="contact.desc">For collaborations and projects:</p>
         <p style="margin:.5rem 0 0"><a href="mailto:gursafa@gmail.com" class="btn ghost">✉️ gursafa@gmail.com</a></p>
-       
       </div>
     </section>
 
