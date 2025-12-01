@@ -76,3 +76,90 @@ footer{margin:48px 0 24px; text-align:center; color:var(--muted)}
 @media (max-width: 980px){.hero{grid-template-columns:1fr}.about{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr 1fr}}
 @media (max-width: 640px){h1{font-size:34px}.gallery-grid{grid-template-columns:1fr 1fr}}
 @media (prefers-reduced-motion: reduce){.orb, .ring{animation:none}}
+/* --- DİJİTAL İKİZ VE LAYOUT AYARLARI (EN ALTA EKLE) --- */
+
+/* Genel Layout (Masaüstü) */
+.hero-split-layout {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+/* Sütunlar */
+.hero-col {
+  flex: 1;
+  min-width: 300px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-col-left { gap: 2rem; }
+.hero-col-right { gap: 1rem; }
+
+/* Mevcut kartların genişliğini zorla */
+.hero-col .hero-card, 
+.hero-col .card {
+  width: 100%;
+  margin: 0;
+}
+
+/* AI Başlık Alanı */
+.ai-header {
+  padding: 10px 5px;
+}
+.ai-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ai-desc {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Chatbot Kutusu */
+.chatbot-box {
+  width: 100%;
+  height: 650px; /* Masaüstü yüksekliği */
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+/* --- MOBİL UYUMLULUK (RESPONSIVE) --- */
+@media (max-width: 900px) {
+  /* Yan yana olan düzeni alt alta çevir */
+  .hero-split-layout {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* Sütunlar tam genişlik olsun */
+  .hero-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: auto !important;
+  }
+
+  /* Chatbot mobilde ekranı çok kaplamasın */
+  #chatbot-container {
+    height: 500px !important; 
+  }
+  
+  /* Başlık fontlarını mobilde biraz küçült */
+  .ai-title {
+    font-size: 1.3rem;
+  }
+}
